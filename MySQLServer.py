@@ -12,8 +12,8 @@ try:
 
     print("Database created successfully!")
 
-except Error as e:
-    print(f"Error: Could not connect to the MySQL server. {e}")
+except mysql.connector.Error:
+    print(f"Error: Could not connect to the MySQL server.")
 
 finally:
     if mydb.is_connected():
