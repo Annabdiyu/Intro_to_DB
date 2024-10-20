@@ -1,6 +1,8 @@
 -- Active: 1729411867836@@127.0.0.1@3306@alx_book_store
 USE alx_book_store
 
+CREATE DATABASE IF NOT EXISTS alx_book_store;
+
 CREATE Table Authors(
     author_id INT PRIMARY KEY,
     author_name VARCHAR(215)
