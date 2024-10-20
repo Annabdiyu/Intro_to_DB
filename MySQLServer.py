@@ -8,7 +8,7 @@ try:
         passwd="AASTUSOFT1"  
     )
     mycursor = mydb.cursor()
-    mycursor.execute("CREATE DATABASE my_new_database")
+    mycursor.execute("CREATE DATABASE IF NOT EXISTS alx_book_store")
 
     print("Database created successfully!")
 
